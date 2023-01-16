@@ -8,7 +8,6 @@ import {
   StatPercentage,
 } from './Statistics.staled';
 
-
 export const Statistics = ({ title, stats }) => {
   return (
     title && (
@@ -16,7 +15,7 @@ export const Statistics = ({ title, stats }) => {
         <Title>{title}</Title>
         <StatList>
           {stats.map(({ id, label, percentage }) => (
-            <StatItem key={id} style={{backgroundColor: getRandomHexColor()}}>
+            <StatItem key={id} style={{ backgroundColor: getRandomHexColor() }}>
               <StatLabel>{label}</StatLabel>
               <StatPercentage>{percentage + '%'}</StatPercentage>
             </StatItem>
@@ -27,20 +26,19 @@ export const Statistics = ({ title, stats }) => {
   );
 };
 
-
-function getRandomHexColor(){
+function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
 
 Statistics.propTypes = {
-    title: PropTypes.string,
-    stats: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        label: PropTypes.string.isRequired,
-        percentage: PropTypes.number.isRequired,
-      })
-    ),
-  }; 
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
+};
