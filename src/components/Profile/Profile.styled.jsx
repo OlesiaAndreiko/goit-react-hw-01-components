@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const ProfileUser = styled.div`
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   border: 1px solid rgb(205, 204, 204, 50%);
   box-shadow: 0px 0px 3px rgb(15 14 15 / 70%);
@@ -83,7 +84,6 @@ export const LastStatsItem = styled.li`
 
 export const StatsLabel = styled.span`
   font-size: 18px;
-  align-items: center;
   color: #7a6c6c;
   text-shadow: 0px 0px 2px rgb(0, 0, 0, 53%);
 `;
@@ -91,6 +91,5 @@ export const StatsLabel = styled.span`
 export const StatsQuantity = styled.span`
   font-size: 22px;
   font-weight: 500;
-  align-items: center;
   text-shadow: 0px 0px 3px rgb(15, 14, 15, 70%);
 `;

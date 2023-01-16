@@ -4,18 +4,17 @@ export const Statistic = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1024px;
-  max-width: 100%;
   height: auto;
   border: 1px solid rgb(205, 204, 204, 50%);
   border-radius: 4px;
-  padding: 0 10px;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
 `;
 
 export const Title = styled.h2`
   text-transform: uppercase;
   text-align: center;
+  height: 40px;
   margin: 0 auto;
   padding: 20px;
   font-size: 30px;

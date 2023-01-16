@@ -15,7 +15,6 @@ display: flex;
 align-items: center;
 gap: 10px;
 margin: 0;
-padding: 10px;
 padding: 0px 10px;
 height: 100px;
 border: 2px solid rgb(205, 204, 204, 50%);
