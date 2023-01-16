@@ -42,7 +42,6 @@ export const UserTag = styled.p`
   color: #7a6c6c;
   font-size: 22px;
   align-items: center;
-
   text-shadow: 0px 0px 4px rgb(0, 0, 0, 53%);
 `;
 
@@ -52,7 +51,6 @@ export const UserLocation = styled.p`
   color: #7a6c6c;
   font-size: 24px;
   align-items: center;
-
   text-shadow: 0px 0px 4px rgb(0, 0, 0, 53%);
 `;
 
@@ -60,7 +58,6 @@ export const ProfileStats = styled.ul`
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-
   background-color: rgb(138, 161, 184, 22%);
   margin: 0;
   padding: 0;
