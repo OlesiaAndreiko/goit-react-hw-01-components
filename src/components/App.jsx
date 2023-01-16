@@ -23,7 +23,6 @@ export const App = () => {
     <Statistics title ="Upload stats" stats = {data}/>
     <FriendList friends = {friends}></FriendList>
     <TransactionHistory transactions = {transactions}></TransactionHistory>
-    {console.log(TransactionHistory)}
   </div>;
   </>
 };
