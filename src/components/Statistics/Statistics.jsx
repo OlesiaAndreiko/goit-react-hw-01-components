@@ -10,19 +10,17 @@ import {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    title && (
-      <Statistic>
-        <Title>{title}</Title>
-        <StatList>
-          {stats.map(({ id, label, percentage }) => (
-            <StatItem key={id} style={{ backgroundColor: getRandomHexColor() }}>
-              <StatLabel>{label}</StatLabel>
-              <StatPercentage>{percentage + '%'}</StatPercentage>
-            </StatItem>
-          ))}
-        </StatList>
-      </Statistic>
-    )
+    <Statistic>
+      {title && <Title>{title}</Title>}
+      <StatList>
+        {stats.map(({ id, label, percentage }) => (
+          <StatItem key={id} style={{ backgroundColor: getRandomHexColor() }}>
+            <StatLabel>{label}</StatLabel>
+            <StatPercentage>{percentage + '%'}</StatPercentage>
+          </StatItem>
+        ))}
+      </StatList>
+    </Statistic>
   );
 };
 
